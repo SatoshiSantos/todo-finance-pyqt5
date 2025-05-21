@@ -1,0 +1,140 @@
+{
+    "todos": [
+        {
+            "task": "Finish Project",
+            "category": "Education",
+            "status": "In Progress",
+            "due_date": "2025-05-25",
+            "completed": true
+        },
+        {
+            "task": "test1",
+            "category": "Home",
+            "status": "On Hold",
+            "due_date": "",
+            "completed": false
+        },
+        {
+            "task": "test2",
+            "category": "Business",
+            "status": "Not Started",
+            "due_date": "05/25/2025",
+            "completed": false
+        },
+        {
+            "task": "test4",
+            "category": "Personal",
+            "status": "Completed",
+            "due_date": "08/255/25",
+            "completed": false
+        },
+        {
+            "task": "test",
+            "category": "Test",
+            "status": "On Hold",
+            "due_date": "",
+            "completed": false
+        }
+    ],
+    "credit_cards": [
+        {
+            "owner": "Rafael",
+            "card_name": "Test1",
+            "limit": 11000.0,
+            "available": 6000.0,
+            "balance": 5000.0,
+            "payment": 55.0,
+            "due_date": "2025-05-25"
+        },
+        {
+            "owner": "Antonella",
+            "card_name": "Test2",
+            "limit": 11000.0,
+            "available": 6000.0,
+            "balance": 5000.0,
+            "payment": 55.0,
+            "due_date": "2025-05-25"
+        },
+        {
+            "owner": "Rafael",
+            "card_name": "Test3",
+            "limit": 25000.0,
+            "available": 20000.0,
+            "balance": 5000.0,
+            "payment": 100.0,
+            "due_date": "2025-05-20"
+        }
+    ],
+    "categories": [
+        {
+            "name": "Personal",
+            "color": "#FF5733"
+        },
+        {
+            "name": "Home",
+            "color": "#33FF57"
+        },
+        {
+            "name": "Education",
+            "color": "#3357FF"
+        },
+        {
+            "name": "Business",
+            "color": "#F033FF"
+        },
+        {
+            "name": "Test",
+            "color": "#00007f"
+        }
+    ],
+    "properties": [
+        {
+            "address": "1729",
+            "value": 355000.0,
+            "loan": 144000.0,
+            "equity": 211000.0,
+            "equity_pct": 59.436619718309856
+        },
+        {
+            "address": "2973",
+            "value": 399000.0,
+            "loan": 330000.0,
+            "equity": 69000.0,
+            "equity_pct": 17.293233082706767
+        }
+    ],
+    "accounts": [
+        {
+            "name": "Rafael",
+            "type": "Checking",
+            "institution": "Regiosn",
+            "balance": 5000000.0
+        },
+        {
+            "name": "Antonella",
+            "type": "Checking",
+            "institution": "Regions",
+            "balance": 6000000000.0
+        }
+    ],
+    "bills": [
+        {
+            "name": "Mortgage",
+            "amount": 2300.0,
+            "due_date": "2025-06-01",
+            "paid": false
+        },
+        {
+            "name": "Water",
+            "amount": 50.0,
+            "due_date": "2025-06-01",
+            "paid": false
+        },
+        {
+            "name": "Electricity",
+            "amount": 130.0,
+            "due_date": "2025-06-01",
+            "paid": false
+        }
+    ]
+}
