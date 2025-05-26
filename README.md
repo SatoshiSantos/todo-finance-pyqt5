@@ -1,9 +1,9 @@
 # Family To-Do & Financial Snapshot
 
-#### Video Demo: <URL HERE>
+#### Video Demo: <Coming Soon>
 #### Author: Rafael Santos  
 #### GitHub: [SatoshiSantos](https://github.com/SatoshiSantos)  
-#### edX Username: <your_edx_username>  
+#### edX Username: SatoshiSantos  
 #### Location: Florida, USA  
 #### Date Recorded: <May 26, 2025>
 
