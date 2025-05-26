@@ -52,3 +52,6 @@ These are covered with unit tests using `pytest`. Tests are found in `test_proje
 Run tests with:
 ```bash
 pytest test_project.py
+
+
+pip install -r requirements.txt
