@@ -5,7 +5,7 @@
 #### GitHub: [SatoshiSantos](https://github.com/SatoshiSantos)  
 #### edX Username: SatoshiSantos  
 #### Location: Florida, USA  
-#### Date Recorded: <May 26, 2025>
+#### Date Recorded: May 26, 2025
 
 ---
 
