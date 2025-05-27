@@ -1,0 +1,7 @@
+# GUI framework
+PyQt5==5.15.10  # Used for building the desktop interface
+
+# Testing framework
+pytest==8.2.0  # For unit testing top-level utility functions
+
+ 

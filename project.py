@@ -10,6 +10,23 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtCore import Qt, QDate
 from PyQt5.QtGui import QColor
 
+def format_currency(amount):
+    """Format a float amount as a dollar string."""
+    return f"${amount:,.2f}"
+
+def calculate_credit_usage(balance, limit):
+    """Return usage percentage of credit as float."""
+    if limit == 0:
+        return 0.0
+    return (balance / limit) * 100
+
+def validate_float(value):
+    """Try converting value to float; return None if invalid."""
+    try:
+        return float(value)
+    except (ValueError, TypeError):
+        return None
+
 # File to store data
 data_file = "data.json"
 if not os.path.exists(data_file):
@@ -116,7 +133,7 @@ class ToDoTab(QWidget):
         self.load_todos()
     
     def choose_color(self):
-        color = QColorDialog.getColor()
+              color = QColorDialog.getColor()
         if color.isValid():
             self.current_color = color.name()
             self.cat_color_preview.setStyleSheet(f"background-color: {self.current_color}; border: 1px solid black")
@@ -511,7 +528,7 @@ class FinancialTab(QWidget):
                 owner_debts[owner] = 0
             owner_debts[owner] += card["balance"]
 
-        total_usage_pct = (total_usage_amount / total_limit * 100) if total_limit else 0
+        total_usage_pct = calculate_credit_usage(total_usage_amount, total_limit)
         total_debt = sum(owner_debts.values())
 
         summary = [
@@ -559,13 +576,14 @@ class FinancialTab(QWidget):
         dialog.exec_()
     
     def save_credit_card_edit(self, index, owner, name, limit, balance, payment, due, dialog):
-        try:
-            limit = float(limit)
-            balance = float(balance)
-            payment = float(payment)
-        except ValueError:
-            QMessageBox.warning(self, "Error", "Please enter valid numbers for limit, balance and payment")
+        limit = validate_float(self.cc_limit_input.text())
+        available = validate_float(self.cc_available_input.text())
+        balance = validate_float(self.cc_balance_input.text())
+        payment = validate_float(self.cc_payment_input.text())
+
+        if None in [limit, available, balance, payment]:
             return
+
         
         if not owner or not name:
             QMessageBox.warning(self, "Error", "Owner and Card Name are required")
@@ -1142,8 +1160,11 @@ class MainApp(QTabWidget):
         self.addTab(self.finance_tab, "Financial Snapshot")
         self.addTab(self.bills_tab, "Monthly Bills")
 
-if __name__ == "__main__":
+def main():
     app = QApplication(sys.argv)
     main_window = MainApp()
     main_window.show()
     sys.exit(app.exec_())
+
+if __name__ == "__main__":
+    main()
