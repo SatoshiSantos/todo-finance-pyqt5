@@ -55,4 +55,4 @@ pytest test_project.py
 
 Install requirements with:
 ```bash
-pip install -r requirements.txt
+pip install requirements.txt
