@@ -133,7 +133,7 @@ class ToDoTab(QWidget):
         self.load_todos()
     
     def choose_color(self):
-              color = QColorDialog.getColor()
+        color = QColorDialog.getColor()
         if color.isValid():
             self.current_color = color.name()
             self.cat_color_preview.setStyleSheet(f"background-color: {self.current_color}; border: 1px solid black")

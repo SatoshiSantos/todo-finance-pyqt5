@@ -12,26 +12,47 @@
             "category": "Home",
             "status": "On Hold",
             "due_date": "",
-            "completed": false
+            "completed": true
         },
         {
             "task": "test2",
             "category": "Business",
             "status": "Not Started",
             "due_date": "05/25/2025",
-            "completed": false
+            "completed": true
         },
         {
             "task": "test4",
             "category": "Personal",
             "status": "Completed",
             "due_date": "08/255/25",
+            "completed": true
+        },
+        {
+            "task": "Cook Dinner",
+            "category": "Home",
+            "status": "Not Started",
+            "due_date": "",
+            "completed": true
+        },
+        {
+            "task": "CS50Test",
+            "category": "Education",
+            "status": "In Progress",
+            "due_date": "2025-05-31",
+            "completed": true
+        },
+        {
+            "task": "Test 502",
+            "category": "Education",
+            "status": "In Progress",
+            "due_date": "2025-06-01",
             "completed": false
         },
         {
-            "task": "test",
-            "category": "Test",
-            "status": "On Hold",
+            "task": "test503",
+            "category": "Education",
+            "status": "Not Started",
             "due_date": "",
             "completed": false
         }
@@ -63,6 +84,15 @@
             "balance": 5000.0,
             "payment": 100.0,
             "due_date": "2025-05-20"
+        },
+        {
+            "owner": "Jaz",
+            "card_name": "Fake Card",
+            "limit": 10000.0,
+            "available": 9500.0,
+            "balance": 500.0,
+            "payment": 50.0,
+            "due_date": "2025-05-30"
         }
     ],
     "categories": [
@@ -85,6 +115,18 @@
         {
             "name": "Test",
             "color": "#00007f"
+        },
+        {
+            "name": "test2",
+            "color": "#ffaa00"
+        },
+        {
+            "name": "test50",
+            "color": "#ffff7f"
+        },
+        {
+            "name": "Test5001",
+            "color": "#aa00ff"
         }
     ],
     "properties": [
@@ -122,7 +164,7 @@
             "name": "Mortgage",
             "amount": 2300.0,
             "due_date": "2025-06-01",
-            "paid": false
+            "paid": true
         },
         {
             "name": "Water",

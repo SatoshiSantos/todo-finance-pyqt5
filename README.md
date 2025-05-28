@@ -1,11 +1,11 @@
 # Family To-Do & Financial Snapshot
 
-#### Video Demo: <Coming Soon>
+#### Video Demo: [Youtube](https://youtu.be/742hhTo2rNs)
 #### Author: Rafael Santos  
 #### GitHub: [SatoshiSantos](https://github.com/SatoshiSantos)  
 #### edX Username: SatoshiSantos  
 #### Location: Florida, USA  
-#### Date Recorded: May 26, 2025
+#### Date Recorded: May 28, 2025
 
 ---
 
@@ -38,6 +38,10 @@ The application was created as the final project for CS50's Introduction to Prog
   - Total and per-user debt
 - Input validation ensures clean data entry
 
+## Notes
+"Could not load the Qt platform plugin 'xcb'"
+
+is a common issue on Linux systems and code spaces (especially in cloud shells or headless environments) when running PyQt5 GUI apps, because the xcb platform plugin requires additional system libraries that are missing
 ---
 
 ## 🧪 Testing
@@ -55,4 +59,4 @@ pytest test_project.py
 
 Install requirements with:
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
